@@ -225,9 +225,47 @@ class _HomePageState extends State<HomePage> {
       );
     }
 
+    Widget customBottomNav() {
+      return Container(
+        width: double.infinity,
+        height: 80,
+        color: whiteColor,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Image.asset(
+              'assets/assignment.png',
+              width: 25,
+              height: 25,
+            ),
+            Image.asset(
+              'assets/swap_horiz.png',
+              width: 25,
+              height: 25,
+            ),
+            Image.asset(
+              'assets/home_alt_fill.png',
+              width: 25,
+              height: 25,
+            ),
+            Image.asset(
+              'assets/assessment.png',
+              width: 25,
+              height: 25,
+            ),
+            Image.asset(
+              'assets/person.png',
+              width: 25,
+              height: 25,
+            ),
+          ],
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: backgroundColor,
-      bottomNavigationBar: CustomBottomNav(),
+      bottomNavigationBar: customBottomNav(),
       body: SafeArea(
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
